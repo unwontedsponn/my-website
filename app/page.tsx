@@ -22,7 +22,7 @@ export default function Home() {
           </p>
 
           <p className="text-base md:text-lg text-gray-700 mb-8 max-w-2xl leading-relaxed">
-            I'm a creative software developer, aka "that WebLLM guy". I'm the person you call to turn your raw idea into the finished article, handling everything from UX to launch - and beyond.
+            {`I'm a creative software developer, aka "that WebLLM guy". I'm the person you call to turn your raw idea into the finished article, handling everything from UX to launch - and beyond.`}
           </p>     
 
           <a
@@ -50,7 +50,7 @@ export default function Home() {
               <h3 className="text-2xl font-semibold">Copy Companion</h3>
               <p className="text-xs uppercase tracking-wider text-gray-500 mt-2 mb-1">AI Tool • WebLLM • Privacy-first</p>
               <p className="text-gray-700 leading-relaxed">
-                A copy checker for marketing teams who need to write in line with their company's brand guidlines. It runs entirely in the browser using WebLLM + Regex, and helps creators stay on-brand without sending content to the cloud.
+                {`A copy checker for marketing teams who need to write in line with their company's brand guidlines. It runs entirely in the browser using WebLLM + Regex, and helps creators stay on-brand without sending content to the cloud.`}
               </p>
               <a
                 href="https://www.copy-companion.com"
