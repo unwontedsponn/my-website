@@ -1,103 +1,184 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="px-6 max-w-6xl mx-auto">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+      {/* HERO */}
+      <section className="min-h-screen bg-white text-gray-900 py-24 px-6 flex flex-col items-start justify-center">
+        <div className="max-w-3xl">
+          <h1 className="text-5xl md:text-8xl font-extrabold mb-4 tracking-tight">
+            Ben Spooner.
+          </h1>
+
+          {/* <p className="text-sm uppercase tracking-wide text-gray-500 mb-2">
+            Product Builder + WebLLM Specialist
+          </p> */}
+
+          <p className="text-sm uppercase tracking-wide text-gray-500 mb-2">
+            PRODUCT BUILDER + WEBLLM SPECIALIST
+          </p>
+
+          <p className="text-xl md:text-2xl font-medium text-gray-800 mb-4">
+            One person. One build. Start to finish.
+          </p>
+
+          <p className="text-base md:text-lg text-gray-700 mb-8 max-w-2xl leading-relaxed">
+            I'm a creative software developer, aka "that WebLLM guy". I'm the person you call to turn your raw idea into the finished article, handling everything from UX to launch - and beyond.
+          </p>     
+
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contact"
+            aria-label="Jump to contact section"
+            className="inline-block bg-black text-white px-6 py-3 text-base font-medium border-4 border-black hover:bg-white hover:text-black transition"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+            Let’s build your product →
           </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+
+          <div className="mt-20 text-gray-400 text-2xl animate-bounce-slow">↓</div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+      {/* My Projects */}      
+      <section className="bg-white text-gray-900 px-6 py-20 border-t border-gray-200">
+        <div className="max-w-3xl">
+
+          <h3 className="text-sm uppercase tracking-widest text-gray-500 mb-4">Things I’ve Built</h3>
+
+          <div className="space-y-12">
+            
+            {/* Copy Companion */}
+            <article className="border-l-4 border-black pl-4">
+              <h3 className="text-2xl font-semibold">Copy Companion</h3>
+              <p className="text-xs uppercase tracking-wider text-gray-500 mt-2 mb-1">AI Tool • WebLLM • Privacy-first</p>
+              <p className="text-gray-700 leading-relaxed">
+                A copy checker for marketing teams who need to write in line with their company's brand guidlines. It runs entirely in the browser using WebLLM + Regex, and helps creators stay on-brand without sending content to the cloud.
+              </p>
+              <a
+                href="https://www.copy-companion.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm uppercase tracking-wide text-black hover:underline transition"
+              >
+                Visit site →
+              </a>
+            </article>
+
+            {/* 14 Days to Composer */}
+            <article className="border-l-4 border-black pl-4">
+              <h3 className="text-2xl font-semibold">Beginner to Composer in 14 Days</h3>
+              <p className="text-xs uppercase tracking-wider text-gray-500 mt-2 mb-1">Website • Digital Course • MVP</p>
+              <p className="text-gray-700 leading-relaxed">                
+                A website promoting a book + eBook titled Beginner to Composer in 14 Days. Embedded into the website is a preview of a digital course, the MVP for this educational book for budding musicians.
+              </p>
+              <a
+                href="https://www.14days.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm uppercase tracking-wide text-black hover:underline transition"
+              >
+                Visit site →
+              </a>
+            </article>
+
+            {/* Keep The Music Alive */}
+            <article className="border-l-4 border-black pl-4">
+              <h3 className="text-2xl font-semibold">Keep The Music Alive</h3>
+              <p className="text-xs uppercase tracking-wider text-gray-500 mt-2 mb-1">Game • 2D • Platformer</p>
+              <p className="text-gray-700 leading-relaxed">
+                A retro 2D platform game where your moves shape a jazz/classical soundtrack in real-time. It’s part game, part album, part interactive composition tool.
+              </p>
+              <a
+                href="#"
+                className="text-sm uppercase tracking-wide text-black hover:underline transition"
+              >
+                Play the game →
+              </a>
+            </article>
+          </div>
+
+          <p className="text-lg text-gray-700 mt-16 leading-relaxed max-w-2xl">
+            One build means one complete product - not a handoff or a piecemeal job. One point of contact, a safe pair of hands.
+          </p>
+        </div>
+      </section>
+
+
+      {/* Why Me */}
+      <section className="bg-white text-gray-900 px-6 py-16 border-t border-gray-200">
+        <div className="max-w-3xl">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">Why Me</h2>
+
+          <p className="text-lg text-gray-700 mb-12">
+            I don’t run an agency. I just build products - clean, fast, and end to end. I work hand in hand with clients and make things that actually work.
+          </p>
+
+          <ul className="space-y-6 text-gray-800 text-base leading-relaxed">
+            <li>
+              <span className="font-semibold uppercase tracking-wide text-sm block mb-1">
+                Solo, start to finish
+              </span>
+              I handle product, UX, and dev. No handoffs. No delays.
+            </li>
+
+            <li>
+              <span className="font-semibold uppercase tracking-wide text-sm block mb-1">
+                Builder, not just coder
+              </span>
+              I think in workflows and outcomes - not just 0s and 1s.
+            </li>
+
+            <li>
+              <span className="font-semibold uppercase tracking-wide text-sm block mb-1">
+                AI-native where it matters
+              </span>
+              I use tools like WebLLM and GPT when they add real value (and skip them when they don’t).
+            </li>
+
+            <li>
+              <span className="font-semibold uppercase tracking-wide text-sm block mb-1">
+                End user hat on (always)
+              </span>
+              I build products with the audience in mind. Intuitive, enjoyable, user experience is a must.
+            </li>
+
+            <li>
+              <span className="font-semibold uppercase tracking-wide text-sm block mb-1">
+                Fast, not rushed
+              </span>
+              Focused builds. Clean results. No bloat.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* CTA */}      
+      <section id="contact" className="bg-white text-gray-900 px-6 py-24 border-t border-gray-200">
+        <div className="max-w-3xl">
+
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">Let’s Build Your Product</h2>
+
+          <p className="text-lg text-gray-700 mb-8">
+            Got an idea? Let’s turn it into a working product - quickly, properly, and in a cutting-edge way.
+          </p>
+
+          
+
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href="mailto:ben@benspooner.co.uk"
+              className="inline-block bg-black text-white px-6 py-3 text-base font-medium border-4 border-black hover:bg-white hover:text-black transition"
+            >
+              Start your build →
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <footer className="text-sm text-gray-400 py-10 text-center">
+        © {new Date().getFullYear()} Ben Spooner.
+        <p>I live in the UK, play drums, cook stews, read, and do dad things.</p>
       </footer>
-    </div>
+
+    </main>
   );
 }
