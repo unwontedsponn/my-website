@@ -1,3 +1,5 @@
+import ContactForm from "./components/ContactForm";
+
 export default function Home() {
   return (
     <main className="px-6 max-w-6xl mx-auto">
@@ -9,11 +11,7 @@ export default function Home() {
             Ben Spooner.
           </h1>
 
-          {/* <p className="text-sm uppercase tracking-wide text-gray-500 mb-2">
-            Product Builder + WebLLM Specialist
-          </p> */}
-
-          <p className="text-sm uppercase tracking-wide text-gray-500 mb-2">
+          <p className="text-sm uppercase tracking-widest text-gray-500 mb-2 font-mono-label">
             PRODUCT BUILDER + WEBLLM SPECIALIST
           </p>
 
@@ -37,11 +35,98 @@ export default function Home() {
         </div>
       </section>
 
+      {/* What is WebLLM? */}
+      <section className="bg-white text-gray-900 px-6 py-16 border-t border-gray-200">
+        <div className="max-w-3xl space-y-6">
+          <h2 className="text-2xl md:text-4xl font-bold tracking-tight">What is WebLLM?</h2>
+          
+          <p className="text-lg text-gray-700 leading-relaxed">
+            WebLLM is an open-source LLM (Large Language Model) that runs entirely in the browser — no servers, no API calls, no data sharing.
+          </p>
+          
+          <p className="text-lg text-gray-700 leading-relaxed">
+            That means full privacy, zero latency, and no OpenAI costs. It’s ideal for internal tools, client-facing apps, or prototypes where you want real AI functionality without a backend.
+          </p>
+          
+          <p className="text-lg text-gray-700 leading-relaxed">
+            It’s not for everything — but when privacy, speed, or budget matters, it’s a powerful alternative to cloud AI.
+          </p>
+
+          <div className="space-y-4 pt-4">
+            <h3 className="text-sm uppercase tracking-widest text-gray-500">Use Cases</h3>
+            <ul className="list-disc list-inside text-gray-700 text-base space-y-1">
+              <li>Internal tools that can’t send data to external APIs</li>
+              <li>Educational apps needing real-time AI feedback</li>
+              <li>Client-facing tools where latency matters (zero server roundtrips)</li>
+              <li>AI features in prototypes without setting up a backend</li>
+            </ul>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6">
+            <div>
+              <h4 className="text-sm uppercase tracking-widest text-gray-500 mb-2">Pros</h4>
+              <ul className="list-disc list-inside text-gray-700 text-base space-y-1">
+                <li>No server/API costs</li>
+                <li>Full user privacy</li>
+                <li>Offline-capable (in some use cases)</li>
+                <li>Faster development cycles (no infra setup)</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-sm uppercase tracking-widest text-gray-500 mb-2">Cons</h4>
+              <ul className="list-disc list-inside text-gray-700 text-base space-y-1">
+                <li>Larger bundle size</li>
+                <li>Not as powerful as GPT-4 (yet)</li>
+                <li>Limited context length (compared to server-based LLMs)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Where WebLLM Makes Total Sense */}
+      <section className="bg-white text-gray-900 px-6 py-20 border-t border-gray-200">
+        <div className="max-w-3xl space-y-6">
+          <h2 className="text-2xl md:text-4xl font-bold tracking-tight">Where WebLLM Shines</h2>
+
+          <p className="text-lg text-gray-700 leading-relaxed">
+            WebLLM is perfect for tools where privacy, cost, or internet access are dealbreakers. These use cases don’t need a pitch — the benefits are built-in.
+          </p>
+
+          <div className="space-y-8">
+            {/* Use Case 1 */}
+            <div>
+              <h3 className="text-lg font-semibold tracking-tight mb-1">Private Writing Tools</h3>
+              <p className="text-gray-700 text-base leading-relaxed">
+                From journaling to therapy notes to legal drafts — users can write with AI assistance without a single API call. Nothing leaves their browser.
+              </p>
+            </div>
+
+            {/* Use Case 2 */}
+            <div>
+              <h3 className="text-lg font-semibold tracking-tight mb-1">Offline-First Learning</h3>
+              <p className="text-gray-700 text-base leading-relaxed">
+                Give learners smart, interactive feedback even when they’re offline — perfect for schools, rural communities, or travel.
+              </p>
+            </div>
+
+            {/* Use Case 3 */}
+            <div>
+              <h3 className="text-lg font-semibold tracking-tight mb-1">Heavy Usage, Zero Cost</h3>
+              <p className="text-gray-700 text-base leading-relaxed">
+                If your users need AI all day, every day — WebLLM keeps the experience fast and the cost at zero. No infra. No quotas. No surprises.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       {/* My Projects */}      
       <section className="bg-white text-gray-900 px-6 py-20 border-t border-gray-200">
         <div className="max-w-3xl">
 
-          <h3 className="text-sm uppercase tracking-widest text-gray-500 mb-4">Things I’ve Built</h3>
+          <h3 className="text-sm uppercase tracking-widest text-gray-500 mb-4 font-mono-label">Things I’ve Built</h3>
 
           <div className="space-y-12">
             
@@ -101,6 +186,17 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Me */}
+      <section className="bg-white text-gray-900 px-6 py-16 border-t border-gray-200">
+        <div className="max-w-3xl">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">About Me</h2>
+          <p className="text-lg text-gray-700 leading-relaxed">
+            I'm a musician-turned-builder who loves creative tools, clean UX, and weird side projects.
+            I started in music composition and education, moved into software, and now specialise in shipping WebLLM-powered
+            products from zero to launch.
+          </p>
+        </div>
+      </section>
 
       {/* Why Me */}
       <section className="bg-white text-gray-900 px-6 py-16 border-t border-gray-200">
@@ -150,31 +246,34 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Is this you?? */}
+      <section className="bg-white text-gray-900 px-6 py-16 border-t border-gray-200">
+        <div className="max-w-3xl">
+          <h2 className="text-xl uppercase tracking-widest text-gray-500 mb-6 font-mono-label">Is this you?</h2>
+          <ul className="space-y-4 text-lg text-gray-700">
+            <li>🚀 You’ve got a product idea and want it built fast — properly.</li>
+            <li>🧠 You care about clean UX and smart AI, not fluff or hype.</li>
+            <li>🔒 You’re building something where privacy matters.</li>
+            <li>📦 You want to avoid agencies and just get it shipped.</li>
+          </ul>
+        </div>
+      </section>
+
       {/* CTA */}      
       <section id="contact" className="bg-white text-gray-900 px-6 py-24 border-t border-gray-200">
         <div className="max-w-3xl">
 
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">Let’s Build Your Product</h2>
-
           <p className="text-lg text-gray-700 mb-8">
             Got an idea? Let’s turn it into a working product - quickly, properly, and in a cutting-edge way.
-          </p>
+          </p>          
 
-          
-
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="mailto:ben@benspooner.co.uk"
-              className="inline-block bg-black text-white px-6 py-3 text-base font-medium border-4 border-black hover:bg-white hover:text-black transition"
-            >
-              Start your build →
-            </a>
-          </div>
-
+          <ContactForm/>          
         </div>
       </section>
 
-      <footer className="text-sm text-gray-400 py-10 text-center">
+      {/* Footer */}
+      <footer className="text-sm text-gray-400 py-10 text-left px-6 mx-auto">
         © {new Date().getFullYear()} Ben Spooner.
         <p>I live in the UK, play drums, cook stews, read, and do dad things.</p>
       </footer>

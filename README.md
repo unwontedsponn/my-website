@@ -1,36 +1,15 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ben Spooner — Product Builder & WebLLM Specialist
 
-## Getting Started
+Welcome. This is the source code for my personal site.
 
-First, run the development server:
+I’m a solo software developer who designs, builds, and ships products end-to-end — with a strong focus on AI-native UX and browser-first tools.  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🧠 Specialism: WebLLM
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+WebLLM is a privacy-first, in-browser LLM that runs entirely on the client — no API calls, no cloud compute. I specialize in integrating this into real-world tools to reduce server costs, enhance data privacy, and keep everything local — no cloud required.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 📬 Contact
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+If you’ve got a project and want to explore building it with WebLLM — or just need a clean, fast build — get in touch.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+https://benspooner.co.uk

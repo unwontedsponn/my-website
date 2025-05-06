@@ -2,7 +2,18 @@
 
 body {  
   font-family: Arial, Helvetica, sans-serif;
+  /* font-family: var(--font-geist-sans), sans-serif; */
 }
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  letter-spacing: -0.02em;
+}
+
+.font-mono-label {
+  font-family: var(--font-geist-mono), monospace;
+  letter-spacing: -0.001em;
+} 
 
 /* For the bouncing arrow in the Hero */
 @keyframes bounce-slow {
@@ -10,4 +21,3 @@ body {
   50% { transform: translateY(6px); }
 }
 .animate-bounce-slow {animation: bounce-slow 1.8s infinite;}
-
