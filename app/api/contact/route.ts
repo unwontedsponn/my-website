@@ -17,6 +17,7 @@ export async function POST(req: Request) {
 
     return new Response('OK', { status: 200 });
   } catch (err) {
+    console.log(err);
     return new Response('Error', { status: 500 });
   }
 }

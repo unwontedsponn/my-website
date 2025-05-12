@@ -61,7 +61,7 @@ export default function Home() {
             {/* 14 Days to Composer */}
             <article className="border-l-4 border-black pl-4">
               <h3 className="text-2xl font-semibold">Beginner to Composer in 14 Days</h3>
-              <p className="text-xs uppercase tracking-wider text-gray-500 mt-2 mb-1">Website • Digital Course • MVP</p>
+              <p className="text-xs uppercase tracking-wider text-gray-500 mt-2 mb-1">Book • Website • Digital Course MVP</p>
               <p className="text-gray-700 leading-relaxed">                
                 A website promoting a book + eBook titled Beginner to Composer in 14 Days. Embedded into the website is a preview of a digital course, the MVP for this educational book for budding musicians.
               </p>
@@ -83,7 +83,7 @@ export default function Home() {
                 A retro 2D platform game where your moves shape a jazz/classical soundtrack in real-time. It’s part game, part album, part interactive composition tool.
               </p>
               <a
-                href="#"
+                href="https://www.ktma.app"
                 className="text-sm uppercase tracking-wide text-black hover:underline transition"
               >
                 Play the game →
