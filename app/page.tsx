@@ -176,7 +176,8 @@ export default function Home() {
 
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">Let’s Build Your Product</h2>
           <p className="text-lg text-gray-700 mb-8">
-            Got an idea? Let’s turn it into a working product - quickly, properly, and in a cutting-edge way.
+            Got an idea? Let’s turn it into a working product...
+            {/* An idea, built properly. */}
           </p>          
 
           <ContactForm/>          

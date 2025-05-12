@@ -1,17 +1,22 @@
-// app/api/contact/route.ts
-import { NextResponse } from 'next/server';
+import { Resend } from 'resend';
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
-  const body = await req.json();
-  const { name, email, message } = body;
+  const { name, email, message } = await req.json();
 
-  if (!name || !email || !message) {
-    return NextResponse.json({ error: 'Missing fields' }, { status: 400 });
+  try {
+    await resend.emails.send({
+      from: 'onboarding@resend.dev',
+      to: 'benpaulspooner@gmail.com',
+      subject: 'New Contact Form Submission',
+      html: `<p><strong>Name:</strong> ${name}</p>
+             <p><strong>Email:</strong> ${email}</p>
+             <p><strong>Message:</strong><br>${message}</p>`
+    });
+
+    return new Response('OK', { status: 200 });
+  } catch (err) {
+    return new Response('Error', { status: 500 });
   }
-
-  // Here you'd integrate with a mail service like Resend, SendGrid, or forward to your own inbox.
-  // For now, just log or simulate
-  console.log('Contact form submitted:', { name, email, message });
-
-  return NextResponse.json({ success: true });
 }
