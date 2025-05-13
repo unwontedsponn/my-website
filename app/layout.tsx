@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { DM_Serif_Text } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next"
 
 const dmSerif = DM_Serif_Text({
   variable: "--font-serif",
@@ -35,6 +36,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${dmSerif.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
