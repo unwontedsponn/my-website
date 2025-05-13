@@ -61,17 +61,17 @@ export default function Home() {
             {/* 14 Days to Composer */}
             <article className="border-l-4 border-black pl-4">
               <h3 className="text-2xl font-semibold">Beginner to Composer in 14 Days</h3>
-              <p className="text-xs uppercase tracking-wider text-gray-500 mt-2 mb-1">Book • Website • Digital Course MVP</p>
+              <p className="text-xs uppercase tracking-wider text-gray-500 mt-2 mb-1">Book • Digital Product • Solo Build</p>
               <p className="text-gray-700 leading-relaxed">                
-                A website promoting a book + eBook titled Beginner to Composer in 14 Days. Embedded into the website is a preview of a digital course, the MVP for this educational book for budding musicians.
+                A novel way to learn piano through composition and improvisation. I built the method, wrote the book, and launched it as a digital product - end-to-end.
               </p>
               <a
-                href="https://www.14days.xyz"
+                href="https://4980964130665.gumroad.com/l/spmes"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm uppercase tracking-wide text-black hover:underline transition"
               >
-                Visit site →
+                Visit on GUMROAD →
               </a>
             </article>
 
@@ -84,6 +84,7 @@ export default function Home() {
               </p>
               <a
                 href="https://www.ktma.app"
+                target="_blank"
                 className="text-sm uppercase tracking-wide text-black hover:underline transition"
               >
                 Play the game →
